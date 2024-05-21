@@ -20,7 +20,6 @@ public class TestLion {
 
     }
 
-
     @Mock
     Feline feline;
 

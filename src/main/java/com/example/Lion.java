@@ -5,13 +5,15 @@ import java.util.List;
 public class Lion {
 
     boolean hasMane;
+    private Feline feline;
 
     public Lion (boolean hasMane, Feline feline)
     {
         this.hasMane = hasMane;
         this.feline = feline;
     }
-    public Lion(String sex) throws Exception {
+    public Lion (String sex,  Feline feline) throws Exception {
+        this.feline = feline;
         if ("Самец".equals(sex)) {
             hasMane = true;
         } else if ("Самка".equals(sex)) {
@@ -21,7 +23,6 @@ public class Lion {
         }
     }
 
-    Feline feline = new Feline();
 
     public int getKittens() {
         return feline.getKittens();

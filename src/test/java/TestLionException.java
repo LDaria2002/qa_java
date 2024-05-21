@@ -1,3 +1,4 @@
+import com.example.Feline;
 import com.example.Lion;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -7,6 +8,7 @@ import org.junit.runners.Parameterized;
 public class TestLionException {
 
     String sex;
+    Feline feline;
 
 
     @Parameterized.Parameters
@@ -23,6 +25,6 @@ public class TestLionException {
 
     @Test(expected = Exception.class)
     public void testDoesHaveMane() throws Exception{
-        new Lion(sex);
+        new Lion(sex, feline);
     }
 }

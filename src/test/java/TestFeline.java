@@ -5,6 +5,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
 
 import java.util.List;
@@ -19,15 +20,14 @@ public class TestFeline {
         expectedFood = List.of("Животные", "Птицы", "Рыба");
     }
 
-    @Mock
-    Animal animal;
 
 
     @Test
     public void testEatMeat() throws Exception {
-        animal.getFood("Хищник");
+       Mockito.when(feline.eatMeat()).thenReturn(expectedFood);
         Assert.assertEquals(expectedFood, feline.eatMeat());
     }
+
     @Test//тестируем метод getKittens без параметра
     public void testOfKittens(){
         feline.getKittens();
