@@ -10,7 +10,6 @@ public class TestLionException {
     String sex;
     Feline feline;
 
-
     @Parameterized.Parameters
     public static Object[][] data() {
         return new Object[][]{

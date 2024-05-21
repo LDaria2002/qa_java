@@ -20,8 +20,6 @@ public class TestFeline {
         expectedFood = List.of("Животные", "Птицы", "Рыба");
     }
 
-
-
     @Test
     public void testEatMeat() throws Exception {
        Mockito.when(feline.eatMeat()).thenReturn(expectedFood);

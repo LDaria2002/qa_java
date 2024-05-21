@@ -12,6 +12,7 @@ public class TestLionParam {
     boolean expectedResult;
     Feline feline;
 
+
     @Parameterized.Parameters
     public static Object[][] data() {
         return new Object[][]{

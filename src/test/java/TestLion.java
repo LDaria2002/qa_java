@@ -19,7 +19,6 @@ public class TestLion {
         expectedFood = List.of("Животные","Птицы", "Рыба");
 
     }
-
     @Mock
     Feline feline;
 
